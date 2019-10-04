@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
 
         editWeight = (EditText) findViewById(R.id.editWeight);
         editHeigth = (EditText) findViewById(R.id.editHeight);
-        hasil = (TextView) findViewById(R.id.hasilBb);
         buttonSubmit = (Button) findViewById(R.id.buttonSubmit);
         buttonReset = (Button) findViewById(R.id.buttonReset);
+        hasil = (TextView) findViewById(R.id.hasilBb);
 
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,19 +38,19 @@ public class MainActivity extends AppCompatActivity {
                     double last = Weight / (Math.pow(Height,2));
 
                     if (last > 1 && last < 18.4){
-                        hasil.setText("Hasil :\t"+" Kekurangan Berat Badan");
+                        hasil.setText("Hasil :\t"+" Kurang Gizi-");
                     }
                     else if (last > 18.5 && last < 24.9){
-                        hasil.setText("Hasil :\t"+" Berat Badan Normal (Ideal)");
+                        hasil.setText("Hasil :\t"+" Normies");
                     }
                     else if (last > 25 && last < 30 ){
-                        hasil.setText("Hasil :\t"+" Kelebihan Berat Badan");
+                        hasil.setText("Hasil :\t"+" Berat badan berlebih!!");
                     }
                     else if (last > 30){
-                        hasil.setText("Hasil :\t"+" Kegemukan (Obesitas)");
+                        hasil.setText("Hasil :\t"+" Terlalu Gemuk!!!");
                     }
                     else {
-                        hasil.setText("Pastikan data yang anda Inputkan sesuai dengan satuan!!");
+                        hasil.setText("Tolong Perhatikan Satuannya!!");
                     }
                 }
                 catch (Exception e) {

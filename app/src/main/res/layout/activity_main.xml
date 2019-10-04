@@ -41,14 +41,14 @@
         android:layout_marginEnd="19dp"
         android:layout_marginRight="19dp"
         android:ems="10"
-        android:hint="Dalam Kg"
+        android:hint="Dengan Satuan KG"
         android:inputType="numberDecimal" />
 
     <EditText android:id="@+id/editHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Dalam Meter"
+        android:hint="Dalam Satuan Meter"
         android:inputType="numberDecimal"
         android:layout_alignBottom="@+id/textView2"
         android:layout_alignParentRight="true"
@@ -56,30 +56,38 @@
         android:layout_marginRight="18dp"
         android:layout_marginEnd="18dp" />
 
-    <Button android:id="@+id/buttonSubmit"
+    <Button
+        android:id="@+id/buttonSubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
-        android:layout_marginTop="20dp"
-        android:text="SUBMIT" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="22dp"
+        android:text="Kalkulasi" />
 
-    <Button android:id="@+id/buttonReset"
+    <Button
+        android:id="@+id/buttonReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RESET"
         android:layout_alignBaseline="@+id/buttonSubmit"
         android:layout_alignBottom="@+id/buttonSubmit"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="0dp"
+        android:text="Mulai Ulang" />
 
-    <TextView android:id="@+id/hasilBb"
+    <TextView
+        android:id="@+id/hasilBb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="143dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginBottom="377dp"
         android:textSize="30sp" />
 
     <TextView
